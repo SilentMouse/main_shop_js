@@ -1,6 +1,6 @@
-// import { delay } from 'redux-saga'
 import { put, takeEvery,fork } from 'redux-saga/effects'
 import * as types from "../constants/actionTypes";
+import productsSaga from "./products";
 
 function* withoutReducer(){
     yield put({ type: types.DECREMENT })
@@ -12,4 +12,5 @@ function* watchWithoutReducer() {
 
 export default function* rootSaga() {
     yield fork(watchWithoutReducer)
+    yield fork(productsSaga)
 }

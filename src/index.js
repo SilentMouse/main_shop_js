@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.css';
-import App from './App';
-import App2 from './App2';
+import Products from './components/Products';
 import registerServiceWorker from './registerServiceWorker';
 
 import store from './store';
@@ -20,8 +19,8 @@ ReactDOM.render(
     <Provider store={store}>
         <Router history={history}>
             <div>
-                <Route exact path="/" component={App}/>
-                <Route exact path="/app2" component={App2}/>
+                <Route exact path="/" component={Products}/>
+                <Route exact path="/app2" component={Products}/>
             </div>
         </Router>
     </Provider>,

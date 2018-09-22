@@ -1,0 +1,2 @@
+export const SET_PRODUCTS = 'SET_PRODUCTS';
+export const SET_PRODUCTS_ON_PAGE = 'SET_PRODUCTS_ON_PAGE';
