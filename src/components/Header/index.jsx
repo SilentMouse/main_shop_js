@@ -203,7 +203,7 @@ class Header extends Component {
 
                                         {/* logo */}
                                         <div className="logo">
-                                            <a href="index.html"><img id="logo" src="images/logo_red.png"
+                                            <a href="/"><img id="logo" src="/images/logo_red.png"
                                                                       alt="IDea"/></a>
                                         </div>
 

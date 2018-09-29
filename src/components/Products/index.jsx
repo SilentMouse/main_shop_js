@@ -34,12 +34,11 @@ class Products extends Component {
                         <div className="fixed-image section dark-translucent-bg parallax-bg-3">
                             <div className="container">
                                 <div className="space-top"></div>
-                                <h1>Welcome to Shop</h1>
+                                <h1>Добро пожаловать в магазин Влада и Макса For-Now.ru</h1>
                                 <div className="separator-2"></div>
-                                <p className="lead">Lorem ipsum dolor sit amet, consectetur elit. Vitae sit excepturi,
-                                    <br className="hidden-xs hidden-sm"/> hic officiis illo dolore sunt assumenda saepe
-                                    id sint praesentium <br className="hidden-xs hidden-sm"/> natus laborum quas
-                                    facilis, suscipit aliquam dolorum.</p>
+                                <p className="lead">Мы рады вас приветствовать в нашем уютном магазине здесь вы можете что то купить
+                                    <br className="hidden-xs hidden-sm"/> потом еще что то купить потом еще
+                                    <br className="hidden-xs hidden-sm"/> а потом еще и еще.</p>
                             </div>
                         </div>
                     </div>
@@ -52,8 +51,8 @@ class Products extends Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <ol className="breadcrumb">
-                                        <li><i className="fa fa-home pr-10"></i><a href="index.html">Home</a></li>
-                                        <li className="active">Shop</li>
+                                        <li><i className="fa fa-home pr-10"></i><a href="index.html">Главная</a></li>
+                                        <li className="active">Каталог</li>
                                     </ol>
                                 </div>
                             </div>
@@ -74,11 +73,10 @@ class Products extends Component {
 
                                     {/* page-title start */}
                                     {/* ================ */}
-                                    <h1 className="page-title">Smartphones</h1>
+                                    <h1 className="page-title">Товары</h1>
                                     <div className="separator-2"></div>
-                                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Voluptas nulla suscipit <br className="hidden-sm hidden-xs"/> unde rerum
-                                        mollitia dolorum.</p>
+                                    <p className="lead">Здесь представлен товары на ваш капризный выбор <br className="hidden-sm hidden-xs"/>
+                                        которые надо покупать.</p>
                                     {/* page-title end */}
 
                                     {/* shop items start */}

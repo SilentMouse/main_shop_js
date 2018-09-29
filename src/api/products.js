@@ -2,12 +2,25 @@ import request from './request';
 
 export function get(params) {
 
-    var limit = 9
+    // var limit = 9
+    //
+    // if (params["limit"]){
+    //     limit = params["limit"]
+    // }
 
-    if (params["limit"]){
-        limit = params["limit"]
-    }
+    let query = `{products{id,title,price,description,media{picture}}}`;
+    return request(query);
+}
 
-    let query = `{products(limit: 9){title price}}`;
+
+export function get_one(params) {
+
+    // var limit = 9
+    //
+    // if (params["limit"]){
+    //     limit = params["limit"]
+    // }
+
+    let query = `{product(id: ${params.id}){id,title,price,description,media{picture}}}`;
     return request(query);
 }

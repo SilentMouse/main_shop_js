@@ -1,5 +1,5 @@
 import {GraphQLClient} from 'graphql-request';
-const client = new GraphQLClient('https://localhost:3001/graphql');
+const client = new GraphQLClient('http://local.for-now.ru/graphql');
 
 function getCookie(name) {
 
@@ -20,6 +20,7 @@ const request = (query) => {
     return client
         .request(query)
         .then(data => {
+            console.log("DATAAA", data)
             return data
         });
 };
