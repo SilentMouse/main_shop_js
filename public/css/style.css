@@ -5200,6 +5200,7 @@ a.overlay.small i {
 	-webkit-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
+	max-width: 75%;
 }
 
 .logo img:hover {
