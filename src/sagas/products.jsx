@@ -6,9 +6,7 @@ import api from "../api";
 
 function *products (params) {
 
-    var data = {}
-
-    const result = yield call(api.products.get, data)
+    const result = yield call(api.products.get, params)
 
     yield put({type: types.SET_PRODUCTS, products: result["products"]})
 }
@@ -16,15 +14,7 @@ function *products (params) {
 
 function *product (params) {
 
-    // var data = {}
-
     const result = yield call(api.products.get_one, params)
-
-    console.log("product", result)
-
-    var data = {id: 2,title: "title1",price: "120"}
-
-    // yield put({type: types.SET_PRODUCT, product: result["product"]})
 
     yield put({type: types.SET_PRODUCT, product: result["product"]})
 }

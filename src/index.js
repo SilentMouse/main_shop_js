@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import './index.css';
 import Products from './components/Products';
 import Product from './components/ProductCard';
+import Posts from './components/Posts';
 import registerServiceWorker from './registerServiceWorker';
 
 import store from './store';
@@ -22,6 +23,7 @@ ReactDOM.render(
             <div>
                 <Route exact path="/" component={Products}/>
                 <Route exact path="/products/:product_id" component={Product}/>
+                <Route exact path="/posts" component={Posts}/>
             </div>
         </Router>
     </Provider>,

@@ -245,34 +245,34 @@ class Header extends Component {
                                                     {/* Collect the nav links, forms, and other content for toggling */}
                                                     <div className="collapse navbar-collapse" id="navbar-collapse-1">
                                                         <ul className="nav navbar-nav navbar-right">
-                                                            <li className="dropdown">
-                                                                <a href="index.html" className="dropdown-toggle"
-                                                                   data-toggle="dropdown">Главная</a>
-                                                                <ul className="dropdown-menu">
-                                                                    <li><a href="index.html">Главная1</a></li>
-                                                                    <li><a href="index-2.html">Главная2</a></li>
-                                                                    <li><a href="index-3.html">Главная3</a></li>
-                                                                    <li><a href="index-4.html">Главная4</a></li>
-                                                                </ul>
+                                                            <li>
+                                                                <a href="/" className="dropdown-toggle"
+                                                                   >Главная</a>
+                                                                {/*<ul className="dropdown-menu">*/}
+                                                                    {/*<li><a href="index.html">Главная1</a></li>*/}
+                                                                    {/*<li><a href="index-2.html">Главная2</a></li>*/}
+                                                                    {/*<li><a href="index-3.html">Главная3</a></li>*/}
+                                                                    {/*<li><a href="index-4.html">Главная4</a></li>*/}
+                                                                {/*</ul>*/}
                                                             </li>
 
-                                                            <li className="dropdown active">
-                                                                <a href="shop-listing-3col.html"
-                                                                   className="dropdown-toggle" data-toggle="dropdown">Каталог</a>
-                                                                <ul className="dropdown-menu">
-                                                                    <li><a href="blog-right-sidebar.html">Товары 1</a></li>
-                                                                    <li><a href="blog-left-sidebar.html">Товары 2</a></li>
-                                                                    <li><a href="blog-no-sidebar.html">Товары3</a></li>
-                                                                </ul>
+                                                            <li>
+                                                                <a href="/"
+                                                                   className="dropdown-toggle">Каталог</a>
+                                                                {/*<ul className="dropdown-menu">*/}
+                                                                    {/*<li><a href="blog-right-sidebar.html">Товары 1</a></li>*/}
+                                                                    {/*<li><a href="blog-left-sidebar.html">Товары 2</a></li>*/}
+                                                                    {/*<li><a href="blog-no-sidebar.html">Товары3</a></li>*/}
+                                                                {/*</ul>*/}
                                                             </li>
-                                                            <li className="dropdown">
-                                                                <a href="blog-right-sidebar.html"
-                                                                   className="dropdown-toggle" data-toggle="dropdown">Блог</a>
-                                                                <ul className="dropdown-menu">
-                                                                    <li><a href="blog-right-sidebar.html">Блог 1</a></li>
-                                                                    <li><a href="blog-left-sidebar.html">Блог 2</a></li>
-                                                                    <li><a href="blog-no-sidebar.html">Блог 3</a></li>
-                                                                </ul>
+                                                            <li>
+                                                                <a href="/blogs"
+                                                                   className="dropdown-toggle">Блог</a>
+                                                                {/*<ul className="dropdown-menu">*/}
+                                                                    {/*<li><a href="blog-right-sidebar.html">Блог 1</a></li>*/}
+                                                                    {/*<li><a href="blog-left-sidebar.html">Блог 2</a></li>*/}
+                                                                    {/*<li><a href="blog-no-sidebar.html">Блог 3</a></li>*/}
+                                                                {/*</ul>*/}
                                                             </li>
                                                         </ul>
                                                     </div>
