@@ -266,7 +266,7 @@ class Header extends Component {
                                                                 {/*</ul>*/}
                                                             </li>
                                                             <li>
-                                                                <a href="/blogs"
+                                                                <a href="/posts"
                                                                    className="dropdown-toggle">Блог</a>
                                                                 {/*<ul className="dropdown-menu">*/}
                                                                     {/*<li><a href="blog-right-sidebar.html">Блог 1</a></li>*/}
