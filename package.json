@@ -15,6 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "create-react-server --createRoutes src/routes.js --createStore src/store.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

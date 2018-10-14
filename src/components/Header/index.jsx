@@ -209,7 +209,7 @@ class Header extends Component {
 
                                         {/* name-and-slogan */}
                                         <div className="site-slogan">
-                                            Лучший портал для вас
+                                            Лечим не симптомы,<br/> а причины их возникновения
                                         </div>
 
                                     </div>

@@ -34,11 +34,12 @@ class Products extends Component {
                         <div className="fixed-image section dark-translucent-bg parallax-bg-3">
                             <div className="container">
                                 <div className="space-top"></div>
-                                <h1>Добро пожаловать в магазин Влада и Макса For-Now.ru</h1>
+                                <h1>Добро пожаловать в магазин For-Now.ru</h1>
                                 <div className="separator-2"></div>
-                                <p className="lead">Мы рады вас приветствовать в нашем уютном магазине здесь вы можете что то купить
-                                    <br className="hidden-xs hidden-sm"/> потом еще что то купить потом еще
-                                    <br className="hidden-xs hidden-sm"/> а потом еще и еще.</p>
+                                <p className="lead">Мы рады вас приветствовать в нашем магазине. Цель нашей компании
+                                    <br className="hidden-xs hidden-sm"/> не личить симптомы болезней, а укреплять организм изнутри.
+                                    <br className="hidden-xs hidden-sm"/> Текст про значение китайской мидецины ТКМ.
+                                    <br className="hidden-xs hidden-sm"/>Мы заботимся о вас.</p>
                             </div>
                         </div>
                     </div>

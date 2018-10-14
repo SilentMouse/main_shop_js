@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.css';
-import Products from './components/Products';
-import Product from './components/ProductCard';
-import Posts from './components/Posts';
-import Post from './components/PostCard';
+
 import registerServiceWorker from './registerServiceWorker';
 
 import store from './store';
+import routes from './routes';
 // import { createStore, applyMiddleware } from 'redux'
 
 import createHistory from 'history/createBrowserHistory'
@@ -21,12 +19,7 @@ const history = createHistory()
 ReactDOM.render(
     <Provider store={store}>
         <Router history={history}>
-            <div>
-                <Route exact path="/" component={Products}/>
-                <Route exact path="/products/:product_id" component={Product}/>
-                <Route exact path="/posts" component={Posts}/>
-                <Route exact path="/posts/:post_id" component={Post}/>
-            </div>
+            {routes()}
         </Router>
     </Provider>,
     document.getElementById('root'),
