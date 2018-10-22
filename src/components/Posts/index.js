@@ -85,7 +85,7 @@ class Posts extends Component {
                                     {/* blogpost end */}
 
                                     {/* pagination start */}
-                                    <ul className="pagination">
+                                    {false && <ul className="pagination">
                                         <li><a  >«</a></li>
                                         <li className="active"><a  >1 <span className="sr-only">(current)</span></a></li>
                                         <li><a  >2</a></li>
@@ -93,7 +93,7 @@ class Posts extends Component {
                                         <li><a  >4</a></li>
                                         <li><a  >5</a></li>
                                         <li><a  >»</a></li>
-                                    </ul>
+                                    </ul>}
                                     {/* pagination end */}
 
                                 </div>
@@ -113,7 +113,7 @@ class Posts extends Component {
                                                 </ul>
                                             </nav>
                                         </div>
-                                        <div className="block clearfix">
+                                        {false && <div className="block clearfix">
                                             <h3 className="title">Latest tweets</h3>
                                             <div className="separator"></div>
                                             <ul className="tweets">
@@ -130,8 +130,8 @@ class Posts extends Component {
                                                     </p><span>16 hours ago</span>
                                                 </li>
                                             </ul>
-                                        </div>
-                                        <div className="block clearfix">
+                                        </div>}
+                                        {false && <div className="block clearfix">
                                             <h3 className="title">Featured Post</h3>
                                             <div className="separator"></div>
                                             <div className="image-box">
@@ -151,16 +151,14 @@ class Posts extends Component {
                                                     <a href="blog-post.html" className="link"><span>Read More</span></a>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>}
                                         <div className="block clearfix">
-                                            <h3 className="title">Text Sample</h3>
+                                            <h3 className="title">Китайская медицина</h3>
                                             <div className="separator"></div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
-                                                nemo, necessitatibus, expedita voluptate esse ipsam aliquid blanditiis
-                                                maxime sequi veniam suscipit atque sapiente cum voluptatum quos mollitia
-                                                laborum? Esse, officia!</p>
+                                            <p>Традиционная китайская медицина — одна из древнейших систем лечения в мире, ее история насчитывает более трех тысяч лет. Но лишь в последние 60–70 лет западный мир стал интересоваться научным обоснованием эффективности ее методов. Многие принципы лечения, которые использует китайская медицина, признаны действенными и активно внедряются в практику западных врачей.
+                                                Оригинал статьи: https://www.kp.ru/guide/kitaiskaja-meditsina.html</p>
                                         </div>
-                                        <div className="block clearfix">
+                                        {false &&<div className="block clearfix">
                                             <h3 className="title">Testimonial</h3>
                                             <div className="separator"></div>
                                             <blockquote className="margin-clear">
@@ -173,51 +171,37 @@ class Posts extends Component {
                                                     dolorem.</p>
                                                 <footer><cite title="Source Title">Steve Doe </cite></footer>
                                             </blockquote>
-                                        </div>
+                                        </div>}
                                         <div className="block clearfix">
-                                            <h3 className="title">Tags</h3>
+                                            <h3 className="title">Теги</h3>
                                             <div className="separator"></div>
                                             <div className="tags-cloud">
                                                 <div className="tag">
-                                                    <a  >energy</a>
+                                                    <a  >мужское</a>
                                                 </div>
                                                 <div className="tag">
-                                                    <a  >business</a>
+                                                    <a  >женское</a>
                                                 </div>
                                                 <div className="tag">
-                                                    <a  >food</a>
+                                                    <a  >очистка</a>
                                                 </div>
                                                 <div className="tag">
-                                                    <a  >fashion</a>
-                                                </div>
-                                                <div className="tag">
-                                                    <a  >finance</a>
-                                                </div>
-                                                <div className="tag">
-                                                    <a  >culture</a>
-                                                </div>
-                                                <div className="tag">
-                                                    <a  >health</a>
-                                                </div>
-                                                <div className="tag">
-                                                    <a  >sports</a>
+                                                    <a  >здоровье</a>
                                                 </div>
                                                 <div className="tag">
                                                     <a  >life style</a>
                                                 </div>
-                                                <div className="tag">
-                                                    <a  >books</a>
-                                                </div>
+
                                             </div>
                                         </div>
-                                        <div className="block clearfix">
+                                        {false && <div className="block clearfix">
                                             <form role="search">
                                                 <div className="form-group has-feedback">
                                                     <input type="text" className="form-control" placeholder="Search"/>
                                                     <i className="fa fa-search form-control-feedback"></i>
                                                 </div>
                                             </form>
-                                        </div>
+                                        </div>}
                                     </div>
                                 </aside>
                                 {/* sidebar end */}
@@ -229,47 +213,7 @@ class Posts extends Component {
 
                     {/* section start */}
                     {/* ================ */}
-                    <div className="section gray-bg text-muted footer-top clearfix">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <div className="owl-carousel clients">
-                                        <div className="client">
-                                            <a  ><img src="/images/client-1.png" alt=""/></a>
-                                        </div>
-                                        <div className="client">
-                                            <a  ><img src="/images/client-2.png" alt=""/></a>
-                                        </div>
-                                        <div className="client">
-                                            <a  ><img src="/images/client-3.png" alt=""/></a>
-                                        </div>
-                                        <div className="client">
-                                            <a  ><img src="/images/client-4.png" alt=""/></a>
-                                        </div>
-                                        <div className="client">
-                                            <a  ><img src="/images/client-5.png" alt=""/></a>
-                                        </div>
-                                        <div className="client">
-                                            <a  ><img src="/images/client-6.png" alt=""/></a>
-                                        </div>
-                                        <div className="client">
-                                            <a  ><img src="/images/client-7.png" alt=""/></a>
-                                        </div>
-                                        <div className="client">
-                                            <a  ><img src="/images/client-8.png" alt=""/></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <blockquote className="inline">
-                                        <p className="margin-clear">Duis aute irure dolor in reprehenderit in voluptate
-                                            velit esse mollit anim.</p>
-                                        <footer><cite title="Source Title">Lorem Ipsum </cite></footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     {/* section end */}
 
                     {/* footer start (Add "light" className to #footer in order to enable light footer) */}

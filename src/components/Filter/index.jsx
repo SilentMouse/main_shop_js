@@ -5,27 +5,26 @@ class Filter extends Component {
         return (
             <div className="list-with-image">
                 <div className="block clearfix">
-                    <h2>Search Filters</h2>
+                    <h2>Подобрать</h2>
                     <div className="separator"></div>
                     <div className="sorting-filters">
                         <form>
                             <div className="form-group">
-                                <label>Sort by</label>
+                                <label>Сортировать по</label>
                                 <select className="form-control">
-                                    <option>Date</option>
-                                    <option>Price</option>
-                                    <option>Model</option>
+                                    <option>Дате</option>
+                                    <option>Цене</option>
                                 </select>
                             </div>
-                            <div className="form-group">
+                            {false && <div className="form-group">
                                 <label>Order</label>
                                 <select className="form-control">
                                     <option>Acs</option>
                                     <option>Desc</option>
                                 </select>
-                            </div>
+                            </div>}
                             <div className="form-group">
-                                <label>Price $ (min/max)</label>
+                                <label>Цена $ (min/max)</label>
                                 <div className="row grid-space-10">
                                     <div className="col-sm-6">
                                         <input type="text" className="form-control"/>
@@ -36,23 +35,20 @@ class Filter extends Component {
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label>Category</label>
+                                <label>Категория</label>
                                 <select className="form-control">
-                                    <option>Smartphones</option>
-                                    <option>Tablets</option>
-                                    <option>Smart Watches</option>
-                                    <option>Desktops</option>
-                                    <option>Software</option>
-                                    <option>Accessories</option>
+                                    <option>Очистка</option>
+                                    <option>Регуляция</option>
+                                    <option>Здоровье</option>
                                 </select>
                             </div>
                             <div className="form-group">
-                                <a   className="btn btn-default">Submit</a>
+                                <a   className="btn btn-default">Найти</a>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div className="block clearfix">
+                {false && <div className="block clearfix">
                     <h2>Brand</h2>
                     <div className="separator"></div>
                     <form className="form-list">
@@ -99,8 +95,8 @@ class Filter extends Component {
                             </label>
                         </div>
                     </form>
-                </div>
-                <div className="block clearfix">
+                </div>}
+                {false && <div className="block clearfix">
                     <h2>Screen Size</h2>
                     <div className="separator"></div>
                     <form className="form-list">
@@ -129,7 +125,7 @@ class Filter extends Component {
                             </label>
                         </div>
                     </form>
-                </div>
+                </div>}
             </div>
         );
     }

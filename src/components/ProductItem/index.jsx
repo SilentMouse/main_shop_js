@@ -14,7 +14,7 @@ class ProductItem extends Component {
                 <div className="listing-item">
                     <div className="overlay-container">
 
-                        {item.media ?
+                        {item.media.length != 0 ?
                             <img src={item.media[0].picture} alt=""/>
                             : <img src="images/product-2.png" alt=""/>
                         }

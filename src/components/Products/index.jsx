@@ -91,16 +91,16 @@ class Products extends Component {
                                     <div className="clearfix"></div>
 
                                     {/* pagination start */}
-                                    <ul className="pagination">
-                                        <li><a>«</a></li>
-                                        <li className="active"><a>1 <span className="sr-only">(current)</span></a>
-                                        </li>
-                                        <li><a>2</a></li>
-                                        <li><a>3</a></li>
-                                        <li><a>4</a></li>
-                                        <li><a>5</a></li>
-                                        <li><a>»</a></li>
-                                    </ul>
+                                    {/*<ul className="pagination">*/}
+                                        {/*<li><a>«</a></li>*/}
+                                        {/*<li className="active"><a>1 <span className="sr-only">(current)</span></a>*/}
+                                        {/*</li>*/}
+                                        {/*<li><a>2</a></li>*/}
+                                        {/*<li><a>3</a></li>*/}
+                                        {/*<li><a>4</a></li>*/}
+                                        {/*<li><a>5</a></li>*/}
+                                        {/*<li><a>»</a></li>*/}
+                                    {/*</ul>*/}
                                     {/* pagination end */}
 
                                 </div>
@@ -108,14 +108,14 @@ class Products extends Component {
 
                                 <aside className="col-md-3">
                                     <div className="sidebar">
-                                        <div className="block clearfix">
-                                            <h2>Best Sellers</h2>
-                                            <div className="separator"></div>
-                                            {[1, 2, 3, 4].map((e) => {
-                                                return <BestSellarItem key={e}/>
-                                            })}
+                                        {/*<div className="block clearfix">*/}
+                                            {/*<h2>Best Sellers</h2>*/}
+                                            {/*<div className="separator"></div>*/}
+                                            {/*{[1, 2, 3, 4].map((e) => {*/}
+                                                {/*return <BestSellarItem key={e}/>*/}
+                                            {/*})}*/}
 
-                                        </div>
+                                        {/*</div>*/}
                                         <Filter/>
                                     </div>
                                 </aside>
