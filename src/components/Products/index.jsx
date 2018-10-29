@@ -36,10 +36,10 @@ class Products extends Component {
                                 <div className="space-top"></div>
                                 <h1>Добро пожаловать в магазин For-Now.ru</h1>
                                 <div className="separator-2"></div>
-                                <p className="lead">Мы рады вас приветствовать в нашем магазине. Цель нашей компании
-                                    <br className="hidden-xs hidden-sm"/> не личить симптомы болезней, а укреплять организм изнутри.
-                                    <br className="hidden-xs hidden-sm"/> Текст про значение китайской мидецины ТКМ.
-                                    <br className="hidden-xs hidden-sm"/>Мы заботимся о вас.</p>
+                                <p className="lead">Цель нашей компании укрепить организм изнутри при помощи ТКМ.<br/>
+                                    Что такое ТКМ - система уникальных учений и практик, зародившаяся в Древнем Китае<br/>
+                                    и возникшая из точного наблюдения за функционированием человеческого организма и последующей систематизации этих знаний с использованием характерной для модели<br/>
+                                    этого региона, которую можно охарактеризовать как учение о символах и числах.</p>
                             </div>
                         </div>
                     </div>
@@ -76,8 +76,7 @@ class Products extends Component {
                                     {/* ================ */}
                                     <h1 className="page-title">Товары</h1>
                                     <div className="separator-2"></div>
-                                    <p className="lead">Здесь представлен товары на ваш капризный выбор <br className="hidden-sm hidden-xs"/>
-                                        которые надо покупать.</p>
+                                    <p className="lead">Мы являемся официальным дистрибьютером Fohow в России с бесплатной доставкой по всей стране.</p>
                                     {/* page-title end */}
 
                                     {/* shop items start */}

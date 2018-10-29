@@ -57,7 +57,7 @@ class Products extends Component {
                                 <div className="col-md-12">
                                     <ol className="breadcrumb">
                                         <li><i className="fa fa-home pr-10"></i><a href="/">Главная</a></li>
-                                        <li><a href="/">Католог</a></li>
+                                        <li><a href="/">Каталог</a></li>
                                         <li className="active">{product.title}</li>
                                     </ol>
                                 </div>

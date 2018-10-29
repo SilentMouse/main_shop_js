@@ -57,7 +57,7 @@ class Header extends Component {
                                     {/* header-top-first end */}
 
                                 </div>
-                                <div className="col-xs-10 col-sm-6">
+                                {false && <div className="col-xs-10 col-sm-6">
 
                                     {/* header-top-second start */}
                                     {/* ================ */}
@@ -188,7 +188,7 @@ class Header extends Component {
                                     </div>
                                     {/* header-top-second end */}
 
-                                </div>
+                                </div>}
                             </div>
                         </div>
                     </div>

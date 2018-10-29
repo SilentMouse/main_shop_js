@@ -72,7 +72,7 @@ class Posts extends Component {
                                     {/* ================ */}
                                     <h1 className="page-title">Блог</h1>
                                     <div className="separator-2"></div>
-                                    <p className="lead">Новости и актуальные события нашего сайта. <br className="hidden-sm hidden-xs"/> Комментируйте ребята пожалуйста.
+                                    <p className="lead">Новости и актуальные события нашего сайта.
                                     </p>
                                     {/* page-title end */}
 
