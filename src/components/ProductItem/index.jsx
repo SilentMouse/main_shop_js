@@ -30,8 +30,7 @@ class ProductItem extends Component {
                         <div className="elements-list pull-right">
                             <a className="wishlist" title="wishlist"><i
                                 className="fa fa-heart-o"></i></a>
-                            <a  ><i className="fa fa-shopping-cart pr-10"></i>Add to
-                                Cart</a>
+                            <a  ><i className="fa fa-shopping-cart pr-10"></i>Купить</a>
                         </div>
                     </div>
                 </div>

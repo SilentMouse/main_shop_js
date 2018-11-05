@@ -37,9 +37,8 @@ class Filter extends Component {
                             </div>
                             <div className="col-md-6">
                                 <blockquote className="inline">
-                                    <p className="margin-clear">Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse mollit anim.</p>
-                                    <footer><cite title="Source Title">Lorem Ipsum </cite></footer>
+                                    <p className="margin-clear">Беды приходят тогда, когда люди в своей лени забывают заботиться о себе.</p>
+                                    <footer><cite title="Source Title">Сунь Цзы</cite></footer>
                                 </blockquote>
                             </div>
                         </div>

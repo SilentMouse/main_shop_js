@@ -87,12 +87,12 @@ class Posts extends Component {
                                     {/* pagination start */}
                                     {false && <ul className="pagination">
                                         <li><a  >«</a></li>
-                                        <li className="active"><a  >1 <span className="sr-only">(current)</span></a></li>
-                                        <li><a  >2</a></li>
-                                        <li><a  >3</a></li>
-                                        <li><a  >4</a></li>
-                                        <li><a  >5</a></li>
-                                        <li><a  >»</a></li>
+                                        <li className="active"><a>1 <span className="sr-only">(current)</span></a></li>
+                                        <li><a>2</a></li>
+                                        <li><a>3</a></li>
+                                        <li><a>4</a></li>
+                                        <li><a>5</a></li>
+                                        <li><a>»</a></li>
                                     </ul>}
                                     {/* pagination end */}
 

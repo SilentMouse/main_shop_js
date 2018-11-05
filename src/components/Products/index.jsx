@@ -10,6 +10,7 @@ import Filter from "../Filter"
 import Footer from "../Footer"
 
 import * as actionCreators from "../../actions/products_actions"
+import * as actionCreatorsCategory from "../../actions/categories_actions"
 
 class Products extends Component {
 
@@ -19,9 +20,11 @@ class Products extends Component {
 
     componentDidMount() {
         this.props.actions.setProductsOnPage()
+        this.props.actions_category.setCategoriesOnPage()
     }
 
     render() {
+
         return (
             <div>
                 <div className="scrollToTop"><i className="fa fa-angle-up"></i></div>
@@ -90,16 +93,16 @@ class Products extends Component {
                                     <div className="clearfix"></div>
 
                                     {/* pagination start */}
-                                    {/*<ul className="pagination">*/}
-                                        {/*<li><a>«</a></li>*/}
-                                        {/*<li className="active"><a>1 <span className="sr-only">(current)</span></a>*/}
-                                        {/*</li>*/}
-                                        {/*<li><a>2</a></li>*/}
-                                        {/*<li><a>3</a></li>*/}
-                                        {/*<li><a>4</a></li>*/}
-                                        {/*<li><a>5</a></li>*/}
-                                        {/*<li><a>»</a></li>*/}
-                                    {/*</ul>*/}
+                                    {false && <ul className="pagination">
+                                        <li><a>«</a></li>
+                                        <li className="active"><a>1 <span className="sr-only">(current)</span></a>
+                                        </li>
+                                        <li><a href="/products?page=2">2</a></li>
+                                        <li><a href="/products?page=3">3</a></li>
+                                        <li><a>4</a></li>
+                                        <li><a>5</a></li>
+                                        <li><a>»</a></li>
+                                    </ul>}
                                     {/* pagination end */}
 
                                 </div>
@@ -115,7 +118,7 @@ class Products extends Component {
                                             {/*})}*/}
 
                                         {/*</div>*/}
-                                        <Filter/>
+                                        <Filter categories={this.props.categories} setCategory={this.setCategory}/>
                                     </div>
                                 </aside>
 
@@ -135,14 +138,16 @@ class Products extends Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        actions: bindActionCreators(actionCreators, dispatch)
+        actions: bindActionCreators(actionCreators, dispatch),
+        actions_category: bindActionCreators(actionCreatorsCategory, dispatch)
     }
 }
 
 
 const mapStateToProps = (state) => (
     {
-        products: state.products.products
+        products: state.products.products,
+        categories: state.categories.categories
     }
 );
 

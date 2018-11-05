@@ -20,7 +20,7 @@ const request = (query) => {
     return client
         .request(query)
         .then(data => {
-            console.log("DATAAA", data)
+            console.log("DATA", data)
             return data
         });
 };

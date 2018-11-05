@@ -123,42 +123,44 @@ class Products extends Component {
                                                     className="fa fa-star text-default"></i><i
                                                     className="fa fa-star"></i></span>
                                                 <a className="wishlist"><i
-                                                    className="fa fa-heart-o pr-5"></i>Wishlist</a>
+                                                    className="fa fa-heart-o pr-5"></i></a>
                                             </div>
                                             <div className="clearfix"></div>
                                             <hr/>
                                             <div className="row">
                                                 <form>
-                                                    <div className="col-md-4">
-                                                        <div className="form-group">
-                                                            <label>Quantity</label>
-                                                            <input type="text" className="form-control" value={1}
-                                                                   onChange={() => console.log("het")}/>
+                                                    {false && <div>
+                                                        <div className="col-md-4">
+                                                            <div className="form-group">
+                                                                <label>Quantity</label>
+                                                                <input type="text" className="form-control" value={1}
+                                                                       onChange={() => console.log("het")}/>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div className="col-md-4">
-                                                        <div className="form-group">
-                                                            <label>Color</label>
-                                                            <select className="form-control">
-                                                                <option>Red</option>
-                                                                <option>White</option>
-                                                                <option>Black</option>
-                                                                <option>Blue</option>
-                                                                <option>Orange</option>
-                                                            </select>
+                                                        <div className="col-md-4">
+                                                            <div className="form-group">
+                                                                <label>Color</label>
+                                                                <select className="form-control">
+                                                                    <option>Red</option>
+                                                                    <option>White</option>
+                                                                    <option>Black</option>
+                                                                    <option>Blue</option>
+                                                                    <option>Orange</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div className="col-md-4">
-                                                        <div className="form-group">
-                                                            <label>Size</label>
-                                                            <select className="form-control">
-                                                                <option>5.3"</option>
-                                                                <option>5.7"</option>
-                                                            </select>
+                                                        <div className="col-md-4">
+                                                            <div className="form-group">
+                                                                <label>Size</label>
+                                                                <select className="form-control">
+                                                                    <option>5.3"</option>
+                                                                    <option>5.7"</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </div>}
                                                     <div className="col-md-12">
-                                                        <input value="Add to Cart" className="btn btn-default"
+                                                        <input value="Купить" className="btn btn-default"
                                                                onClick={() => this.props.actions.setProductOnPage(parseInt(this.props.match.params.product_id))}/>
                                                     </div>
                                                 </form>
@@ -177,6 +179,8 @@ class Products extends Component {
                                                                 className="fa fa-file-text-o pr-5"></i>Описание</a></li>
                                                             <li><a href="#h2tab2" role="tab" data-toggle="tab"><i
                                                                 className="fa fa-files-o pr-5"></i>Свойства</a></li>
+                                                            <li><a href="#h2tab22" role="tab" data-toggle="tab"><i
+                                                                className="fa fa-files-o pr-5"></i>Состав</a></li>
                                                             <li><a href="#h2tab3" role="tab" data-toggle="tab"><i
                                                                 className="fa fa-star pr-5"></i>(3)Отзывы</a></li>
                                                         </ul>
@@ -185,12 +189,24 @@ class Products extends Component {
                                                             className="tab-content padding-top-clear padding-bottom-clear">
                                                             <div className="tab-pane fade in active" id="h2tab1">
                                                                 <h4 className="title">Описание</h4>
-                                                                {product.description}
+                                                                <div className="content"
+                                                                     dangerouslySetInnerHTML={{__html: product.description}}></div>
+                                                                {false && product.description}
                                                             </div>
                                                             <div className="tab-pane fade" id="h2tab2">
                                                                 <h4 className="space-top">Свойства</h4>
                                                                 <hr/>
-                                                                <div>{product.properties}</div>
+                                                                <div className="content"
+                                                                     dangerouslySetInnerHTML={{__html: product.properties}}></div>
+                                                                {false && <div>{product.properties}</div>}
+                                                                <hr/>
+                                                            </div>
+                                                            <div className="tab-pane fade" id="h2tab22">
+                                                                <h4 className="space-top">Состав</h4>
+                                                                <hr/>
+                                                                <div className="content"
+                                                                     dangerouslySetInnerHTML={{__html: product.composition}}></div>
+                                                                {false && <div>{product.composition}</div>}
                                                                 <hr/>
                                                             </div>
                                                             <div className="tab-pane fade" id="h2tab3">

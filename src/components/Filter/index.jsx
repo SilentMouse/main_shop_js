@@ -1,7 +1,41 @@
 import React, {Component} from 'react';
 
+import * as actionCreators from "../../actions/products_actions"
+
+import {connect} from 'react-redux';
+import {bindActionCreators} from "redux";
+
+import Select from 'react-select';
+
 class Filter extends Component {
+
+    state = {
+        selectedOption: {value: 999, label: "Все"},
+    }
+
+    constructor(props){
+        super(props)
+        this.setCategory = this.setCategory.bind(this)
+    }
+
+    setCategory(selectedOption) {
+        this.setState({ selectedOption });
+        this.props.actions.setProductsOnPage(selectedOption["value"])
+        console.log("selectedOption", selectedOption)
+    }
+
     render() {
+
+        const {categories,setCategory} = this.props
+
+        const { selectedOption } = this.state;
+
+        // const setCategory = this.setCategory
+
+        var options = categories.map((e) => {return {value: e["id"],label: e["name"]}})
+
+        options.unshift({value: 999, label: "Все"})
+
         return (
             <div className="list-with-image">
                 <div className="block clearfix">
@@ -9,6 +43,22 @@ class Filter extends Component {
                     <div className="separator"></div>
                     <div className="sorting-filters">
                         <form>
+                            <div className="form-group">
+                                <label>Категория</label>
+
+                                <Select value={selectedOption}
+                                        onChange={this.setCategory}
+                                        options={options}
+                                />
+                                {false && <select className="form-control">
+                                    {categories.map((e) => {
+                                        return <option key={e["key"]}
+                                                       value={e["id"]}
+                                                       onClick={() => {setCategory(e["id"])}}
+                                        >{e["name"]}</option>
+                                    })}
+                                </select>}
+                            </div>
                             <div className="form-group">
                                 <label>Сортировать по</label>
                                 <select className="form-control">
@@ -33,14 +83,6 @@ class Filter extends Component {
                                         <input type="text" className="form-control col-xs-6"/>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="form-group">
-                                <label>Категория</label>
-                                <select className="form-control">
-                                    <option>Очистка</option>
-                                    <option>Регуляция</option>
-                                    <option>Здоровье</option>
-                                </select>
                             </div>
                             <div className="form-group">
                                 <a   className="btn btn-default">Найти</a>
@@ -131,4 +173,21 @@ class Filter extends Component {
     }
 }
 
-export default Filter;
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        actions: bindActionCreators(actionCreators, dispatch),
+    }
+}
+
+const mapStateToProps = (state) => (
+    {
+        categories: state.categories.categories
+    }
+);
+
+const FilterCont = connect(mapStateToProps, mapDispatchToProps)(Filter);
+
+export default FilterCont;
+
+// export default Filter;
