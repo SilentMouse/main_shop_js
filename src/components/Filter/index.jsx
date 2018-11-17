@@ -36,6 +36,7 @@ class Filter extends Component {
 
         options.unshift({value: 999, label: "Все"})
 
+
         return (
             <div className="list-with-image">
                 <div className="block clearfix">

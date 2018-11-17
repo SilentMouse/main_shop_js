@@ -2,3 +2,13 @@
 Version: 1.7
 File Description: Place here your custom CSS styles
 */
+
+
+.product-item{
+    height: 350px;
+    margin: 0 auto;
+}
+
+.item-subtitle{
+    height: 80px;
+}

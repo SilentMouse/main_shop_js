@@ -114,7 +114,8 @@ class Products extends Component {
                                             </div>
                                             {/* Tab panes end*/}
                                             <hr/>
-                                            <span className="price"><del>$159.00</del>
+                                            <span className="price">
+                                                {/*<del>$159.00</del>*/}
                                                 {product.price} руб.</span>
                                             <div className="elements-list pull-right clearfix">
                                                 <span><i className="fa fa-star text-default"></i><i
