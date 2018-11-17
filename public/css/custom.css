@@ -10,5 +10,9 @@ File Description: Place here your custom CSS styles
 }
 
 .item-subtitle{
-    height: 80px;
+    height: 105px;
+}
+
+.item-product-title{
+    height: 45px;
 }

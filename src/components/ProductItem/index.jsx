@@ -24,7 +24,7 @@ class ProductItem extends Component {
                         </Link>
                     </div>
                     <div className="listing-item-body clearfix">
-                        <h3 className="title"><Link to={"/products/" + item.id}>{item.title}</Link></h3>
+                        <h3 className="title item-product-title"><Link to={"/products/" + item.id}>{item.title}</Link></h3>
                         <p className="item-subtitle">{this.props.item.description.substring(0, 100) + "..."}</p>
                         <span className="price">&#8381; {item.price}</span>
                         <div className="elements-list pull-right">
